@@ -1,0 +1,21 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+
+
+<form action="{{ path("fos_user_security_check") }}" method="post">
+   
+
+    
+    <input type="text" id="username" name="_username" placeholder="Name" value="" required="required" />
+
+    
+    <input type="password" id="password" name="_password" placeholder="Password" required="required" />
+    <span>
+    <input type="checkbox" id="remember_me" name="_remember_me" value="on" class="checkbox" />
+      Keep me signed in
+     </span>
+    
+
+    <input type="submit" id="_submit" name="_submit" value="Login" class="bouton" />
+
+</form>
