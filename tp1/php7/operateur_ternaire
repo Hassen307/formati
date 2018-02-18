@@ -1,0 +1,9 @@
+<?php
+
+
+$user=isset($_GET['user']) ? $_GET['user'] : 'not passed 1';
+print_r($user);
+print("<br/>");
+$username=$_GET['username'] ?? $_POST['username'] ?? 'not passed 2';
+print_r($username);
+print("<br/>");

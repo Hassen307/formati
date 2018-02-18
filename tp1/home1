@@ -1,0 +1,27 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Asus
+ * Date: 13/01/2018
+ * Time: 11:23
+ */
+class chainePlus{
+    private $chaine="bonjour";
+    public function __construct($lachaine)
+    {
+        $this->chaine=$lachaine;
+    }
+
+    public function gras($chaine){
+        echo '<b>'.$this->chaine.'</b>';
+    }
+    public function italique($chaine){
+        echo '<i>'.$this->chaine.'</i>';
+    }
+    public function souligne($chaine){
+        echo '<s>'.$this->chaine.'</s>';
+    }
+    public function majuscules($chaine){
+        echo '<b>'.strtoupper ( $this->chaine ).'</b>';
+    }
+}
